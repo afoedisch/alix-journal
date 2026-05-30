@@ -1,4 +1,3 @@
-# alix-journal
 <!DOCTYPE html>
 <html lang="en">
 <head>
