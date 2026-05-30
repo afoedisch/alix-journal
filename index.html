@@ -1,1 +1,48 @@
+<!-- Tailwind CSS (Gives us easy, beautiful styles instantly) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    mono: ['"JetBrains Mono"', 'monospace'],
+                }
+            }
+        }
+    }
+</script>
 
+<!-- Beautiful Fonts from Google -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+    /* Smooth transitions when you switch themes */
+    * {
+        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
+    }
+    
+    /* Premium custom scrollbars */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .theme-cream ::-webkit-scrollbar-thumb {
+        background: #e2dacb;
+        border-radius: 3px;
+    }
+    .theme-dark ::-webkit-scrollbar-thumb {
+        background: #2d2620;
+        border-radius: 3px;
+    }
+    .theme-white ::-webkit-scrollbar-thumb {
+        background: #e5e5e5;
+        border-radius: 3px;
+    }
+</style>
